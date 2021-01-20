@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: rgb(238, 238, 238);
+}
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+/* style s1 */
+.s1{
+    background-image: url(../exo_3_reproduction/images/banner.jpg);
+    height: 100vh;
+    /* pour maitriser l'image en background */
+    /* background-repeat: va demander à l'image de ne plus se "recoller"
+    puis, background-size : va demander à l'image de s'étirer pour couvrir tout le bloc */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position relative pour le menu burger */
+    position: relative;
+}
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 75px;
+    border-bottom: 1px solid rgba(212, 212, 212, 0.589);
+    width: 90%;
+    margin: auto;
+}
+.logo1{
+    width: 14%;
+    height: 20px;
+    margin: 1.5rem;
+}
+/* style nav & links */
+.nav1Header{
+    width: 55%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+}
+.link1{
+    color: rgb(202, 201, 201);
+    text-decoration: none;
+    height: 30px;
+    margin: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.a1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 95px;
+}
+/* pour cacher le menu burger sur pc car on en a pas besoin */
+header .burger{
+    display: none;
+}
+.slogan{
+    color: #DEE0E9;
+    font-size: xx-large;
+    font-size: 65px;
+    width: 55%;
+    text-align: center;
+    cursor:default;
+}
+h1{
+    margin: 0.5rem;
+}
+.slogan2{
+    color: #DEE0E9;
+    font-size: 1.5rem;
+    width: 55%;
+    text-align: center;
+    margin: 2rem 1rem 5.5rem 1rem;
+    cursor:default;
+}
+.linkButton{
+	background-color: #EB4443;
+	border-radius:4px;
+	border:1px solid #EB4443;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:8px 32px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+    text-align: center;
+}
+.linkButton{
+	position:relative;
+	top:1px;
+}
+.linkButton1{
+    width: 200px;
+}
+/* style s2 */
+.s2{
+    height: 675px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor:default;
+}
+.grIcones{
+    display: flex;
+    justify-content: center;
+}
+.a2{
+    padding: 3rem;
+    width: 30%;
+    text-align: justify;
+}
+.titreIcones{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.a2 figure{
+    display: flex;
+    justify-content: center;
+}
+.iconeOrange{
+    color: #DC8080;
+    font-size: 65px;
+}
+/* gallery style */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.photo{
+    /* width : calc(100% / 3) */
+    width: 33.2%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.middle{
+    margin: 0px 2px 0px 2px;
+}
+/* Merci Gaetan pour le hover, tu es le meilleur ! */
+/* Ici on fait disparaitre le overlay avec opacity */
+.photo:hover .overlay{
+    opacity: 1;
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    top: 0;
+    background-color: rgba(250, 81, 81, 0.8);
+    opacity: 0;
+    /* la transition pour opacity */
+    transition: opacity 0.25s ease-in-out;
+    /* Pour centrer le texte au milieu de l'image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: seashell;
+}
+.overlay figcaption{
+    font-size: 1.5rem;
+    /* pour mettre en gras */
+    font-weight: bold;
+    /* pour mettre la sélection en maj */
+    text-transform: uppercase;
+}
+/* animation du texte, pour donner un effet */
+.gallery figcaption{
+    transform: translateY(-200%);
+    transition: all 0.3s ease;
+}
+.gallery figure:hover figcaption {
+    transform: translateY(0);
+}
+.gallery .overlayP{
+    transform: translateY(200%);
+    transition: all 0.3s ease;
+}
+.gallery figure:hover .overlayP {
+    transform: translateY(0);
+}
+/* pour donner un effet de zoom sur les photos avec hover */
+.gallery img{
+    transition: all 0.5s ease;
+}
+.gallery figure:hover img{
+    transform: scale(1.3);
+}
+/* style s4 */
+.s4{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 2rem 4rem;
+    cursor:default;
+}
+.titreJob{
+    color: rgb(199, 39, 39);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.profil{
+    width: 17%;
+    margin: 1.5rem;
+}
+.photoProfil{
+    margin: 0%;
+}
+.iconeGris{
+    color: gray;
+    font-size: 1.8rem;
+    margin: 2px;
+}
+/* style s5 */
+.s5{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.photoTemoin{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    /* vertical-align: bottom / top; */
+    /* ne marche pas pour éviter le petit espace blanc */
+}
+.s5 article{
+    background-color: #52354B;
+    color: rgb(200, 200, 200);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.citation{
+    font-size: 1.5rem;
+    margin: 0;
+    width: 65%;
+    font-style: italic;
+}
+.auteurCitation{
+    margin: 1rem;
+    width: 65%;
+}
+/* style s6 */
+.s6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+}
+.s6p1{
+    font-size: 1.5rem;
+    margin: 0;
+    cursor:default;
+}
+.s6p2{
+    font-size: 15px;
+    margin: 15px 0px 35px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor:default;
+}
+.linkButton2{
+    width: 245px;
+    margin: 10px;
+}
+/* style s7 */
+.s7{
+    display: flex;
+    justify-content: center;
+    background-color: #3A3E64;
+    justify-content: space-around;
+}
+.s7a{
+    width: 30%;
+    text-align: center;
+    color: rgb(200, 200, 200);
+    padding: 1.8rem;
+    cursor:default;
+}
+.iconeBlanc{
+    color: rgb(200, 200, 200);
+    font-size: 1.8rem;
+    margin: 6px;
+}
+/* style footer */
+footer{
+    text-align: center;
+    background-color:  #313455;
+    color: rgb(179, 179, 179);
+    height: 75px;
+}
+.pFooter{
+    margin: 0;
+    padding: 1rem;
+    cursor:default;
+}
+.aLastNom{
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+}
