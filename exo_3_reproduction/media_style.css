@@ -1,0 +1,238 @@
+/* media query pour smartphones */
+@media screen and (max-device-width : 600px){
+    .s1{
+        height: 100vh;
+    }
+    .a1{
+        margin: 0;
+    }
+    .logo1{
+        width: 45%;
+        height: auto;
+    }
+    .nav1Header{
+        display: none;
+    }
+    .slogan{
+        width: 80%;
+        font-size: 28px;
+        margin: 10px;
+   }
+    .slogan2{
+        width: 80%;
+        font-size: 20px;
+        margin: 20px 0px 45px 0px;
+    }
+    .s2{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .grIcones{
+        flex-wrap: wrap;
+    }
+    .a2{
+        padding: 5px;
+        width: 80%;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery .photo{
+        width: 98%;
+        margin: auto;
+        padding: 2px;
+    }
+    .s4{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .profil{
+        width: 100%;
+        margin: 15px;
+    }
+    .photoProfil{
+        width: 80%;
+        margin: auto;
+    }
+    .photoTemoin{
+        display: none;
+    }
+    .citation{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .s6{
+        height: auto;
+    }
+    .s6p1{
+        text-align: center;
+        margin: 10px;
+    }
+    .s6p2{
+        margin: 10px;
+        padding: 0px;
+    }
+    .s7{
+        flex-wrap: wrap;
+    }
+    .s7 h2{
+        margin: 2px;
+    }
+    .s7a{
+        padding: 0;
+        width: 85%;
+    }
+    /* pour le menu burger */
+    header .burger{
+        display: block;
+        border: 1px solid black;
+        width: 48px;
+        /* 48px car c'est la taille du doigt pour appuyer sur un icone */
+        height: 48px;
+        padding: 10px;
+        background-color: #e95757;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    header .burger{
+        position: relative;
+        z-index: 11;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    header .burger span{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: whitesmoke;
+    }
+    .visible{
+        display: block;
+        position :absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .visible .link1{
+        font-size: 1.5rem;
+        padding: 0.1rem 0;
+        color: lightgrey;
+        text-decoration: none;
+        margin: 10px;
+    }
+    .slider-container{
+        display: none;
+    }
+}
+/* media query pour tablettes */
+@media screen and (min-device-width : 768px) and (max-width:1025px){
+    .s1{
+        height: 100vh;
+    }
+    .a1{
+        margin-top: 45px;
+    }
+    .logo1{
+        width: 25%;
+        height: auto;
+    }
+    .nav1Header{
+        display: none;
+    }
+    .slogan{
+        font-size: 45px;
+        margin: 35px;
+    }
+    .slogan2{
+        font-size: 20px;
+        margin: 20px 0px 55px 0px;
+    }
+    .s2{
+        height: auto;
+    }
+    .a2{
+        padding: 10px;
+    }
+    .photo{
+        width: 50%;
+        margin: 0px;
+    }
+    .s4{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .profil{
+        width: 30%;
+    }
+    .photoTemoin{
+        display: none;
+    }
+    .s6{
+        height: 200px;
+    }
+    .s6p2{
+        margin: 15px 0px 20px 0px;
+    }
+    .s7a{
+        padding: 0;
+    }
+    /* pour le menu burger */
+    header .burger{
+        display: block;
+        border: 1px solid black;
+        width: 48px;
+        /* 48px car c'est la taille du doigt pour appuyer sur un icone */
+        height: 48px;
+        padding: 10px;
+        background-color: #e95757;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    header .burger{
+        position: relative;
+        z-index: 11;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    header .burger span{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: whitesmoke;
+    }
+    .visible{
+        display: block;
+        position :absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .visible .link1{
+        font-size: 3rem;
+        padding: 0.5rem 0;
+        color: lightgrey;
+        text-decoration: none;
+    }
+    .slider-container{
+        display: none;
+    }
+}
